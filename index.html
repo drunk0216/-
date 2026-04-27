@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script>
+window.onload = function() {
+  var ua = navigator.userAgent.toLowerCase();
+
+  if (ua.indexOf("android") > -1) {
+    location.href = "intent://#Intent;package=com.igg.android.lordsmobile;end";
+  } else if (ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1) {
+    location.href = "https://lordsmobile.igg.com/";
+  } else {
+    location.href = "https://lordsmobile.igg.com/";
+  }
+};
+</script>
+</head>
+<body></body>
+</html>
